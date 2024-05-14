@@ -42,6 +42,28 @@ function scrolly (button){
 
   mainIformation(member,buttonIndex)
   buttonStatus()
+  console.log(buttonIndex)
+}
+
+function stylebtnmenber(n){
+  const p = document.querySelectorAll(".btnNavBar")
+  let name_btn = p[n].lastChild
+  name_btn.style.color=`var(--${members[n].name})`
+
+  p[n].addEventListener("mouseleave", ()=>{
+    name_btn.style.color=`transparent`
+  })
+  console.log(name_btn)
+
+}
+function buttonNav(number){
+  buttonIndex=number
+  const member = members[number]
+  image.style.transform=`translatey(${-100*number}vh)`
+  mainIformation(member,number)
+  buttonStatus()
+
+  console.log(buttonIndex)
 }
 
 function navbar (){
