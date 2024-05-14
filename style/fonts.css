@@ -7,3 +7,8 @@
   font-family:'Caviar Dreams' ;
   src: url(../assets/CaviarDreams.ttf);
 }
+
+@font-face{
+  font-family: "roboto";
+  src: url(../assets/Roboto-Bold.ttf);
+}

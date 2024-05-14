@@ -14,7 +14,7 @@
   transition: all 0.4s;
 }
 
-#menu img{
+#menu #logo{
   width: 200px;
 }
 .nav{

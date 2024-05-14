@@ -1,13 +1,15 @@
 #navBar{
   position: fixed;
-  right: -500px;
+  right: -1200px;
+  inline-size: none;
   top:0;
-  width: 500px;
+  width: auto;
   height: 100vh;
   padding: 5rem;
   background-color: rgba(0, 0, 0, 0.733);
   z-index: 5;
   transition: all 0.8s;
+  
 }
 #navBar.active{
   right: 0;
@@ -19,13 +21,41 @@
   letter-spacing: .5rem;
 }
 .cards{
+  overflow: inherit;
   display: grid;
   grid-template-columns: repeat(3,1fr);
-  grid-auto-rows: minmax(100px, auto);
-  gap: 10px;
-  padding-top: 1rem;
+  gap: 15px;
+  padding-top: 3rem;
 }
 .cards button{
   border: none;
-  background: transparent;
+  background-color: transparent;
+  cursor: pointer;
+  width: 120px;
+  height:155px;
+  transition: background-color 0.8s;
+}
+
+.cards button img{
+  object-fit: cover;
+  object-position: 50% 0%;
+  width: 120px;
+  height: 155px;
+  transition: all 0.4s;
+}
+.cards button p{
+  color: transparent;
+  font-size: 1.7rem;
+  font-family:'roboto';
+}
+
+.cards button:hover{
+  background-color: rgb(43, 43, 43);
+}
+.cards button:hover img{
+  width: 0px;
+  height: 0;
+}
+.cards button:hover p{
+  color: var(--primary);
 }
