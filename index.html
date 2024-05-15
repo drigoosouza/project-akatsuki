@@ -5,9 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link type="image/png" sizes="96x96" rel="shortcut icon" href="./assets/icons8-nuvem-akatsuki-96.png">
     <link rel="stylesheet" href="./style/main.css">
+
+
+  
     <title>Akatsuki</title>
   </head>
   <body>
+
+    
     <div id="background">
       <div id="image">
         <img class="image" src="./assets/background akatsuki.png"  alt="group akatsuki">
@@ -29,6 +34,8 @@
       <header>
         <img id="logo" src="./assets/logo.png" alt="logo of akatsuki">
         
+        <audio src="./assets/audio/theme-audio.mp3" autoplay loop></audio>
+        <button id="btn-audio-play"><ion-icon name="volume-high-outline"></ion-icon></button>
         <button class="nav" onclick="navbar()">
           <span></span>
           <span></span>
@@ -46,9 +53,9 @@
             <button class="btnNavBar" onclick="buttonNav(5)" onmouseenter="stylebtnmenber(5)"> <img src="./assets/btn-nav-member/kisame-btn.jpg" alt=""> <p class='name-btn'>Kisame</p></button>
             <button class="btnNavBar" onclick="buttonNav(6)" onmouseenter="stylebtnmenber(6)"> <img src="./assets/btn-nav-member/sasori-btn.jpg" alt=""> <p class='name-btn'>Sasori</p></button>
             <button class="btnNavBar" onclick="buttonNav(7)" onmouseenter="stylebtnmenber(7)"> <img src="./assets/btn-nav-member/konan-btn.jpg" alt=""> <p class='name-btn'>Konan</p></button>
-            <button class="btnNavBar" onclick="buttonNav(8)" onmouseenter="stylebtnmenber(8)"> <img src="./assets/btn-nav-member/orochimaru-btn.jpg" alt=""> <p class='name-btn'>Oro</p></button>
+            <button class="btnNavBar" onclick="buttonNav(8)" onmouseenter="stylebtnmenber(8)"> <img src="./assets/btn-nav-member/orochimaru-btn.jpg" alt=""> <p class='name-btn'>Orochi</p></button>
             <button class="btnNavBar" onclick="buttonNav(9)" onmouseenter="stylebtnmenber(9)"> <img src="./assets/btn-nav-member/obito-btn.jpg" alt=""> <p class='name-btn'>Obito</p></button>
-            <button class="btnNavBar" onclick="buttonNav(10)" onmouseenter="stylebtnmenber(10)"> <img src="./assets/btn-nav-member/itachi-btn.jpg" alt=""> <p class='name-btn'>Itahci</p></button>
+            <button class="btnNavBar" onclick="buttonNav(10)" onmouseenter="stylebtnmenber(10)"> <img src="./assets/btn-nav-member/itachi-btn.jpg" alt=""> <p class='name-btn'>Itachi</p></button>
             <button class="btnNavBar" onclick="buttonNav(11)" onmouseenter="stylebtnmenber(11)"> <img src="./assets/btn-nav-member/pain-btn.jpg" alt=""> <p class='name-btn'>Pain</p></button>
           </div>
         </nav>
@@ -67,6 +74,7 @@
       </main>
     </div>
     <script src="./script/scrool-button.js"></script>
+    <script type="module" src="./script/index.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
   </body>

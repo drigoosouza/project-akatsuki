@@ -1,0 +1,15 @@
+#btn-audio-play{
+  position:fixed;
+  top:65px;
+  right: 150px;
+  background-color: transparent;
+  border:none;
+  cursor: pointer;
+  z-index:54545;
+}
+#btn-audio-play ion-icon{
+  font-size: 3rem;
+  color: #fff;
+  text-shadow: 2px;
+  z-index:54545;
+}

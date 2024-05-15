@@ -33,7 +33,7 @@
   cursor: pointer;
   width: 120px;
   height:155px;
-  transition: background-color 0.8s;
+  transition: all 0.9s;
 }
 
 .cards button img{
@@ -41,7 +41,7 @@
   object-position: 50% 0%;
   width: 120px;
   height: 155px;
-  transition: all 0.4s;
+  transition: height 0.8s, width 1s, opacity 0.4s;
 }
 .cards button p{
   color: transparent;
@@ -50,10 +50,11 @@
 }
 
 .cards button:hover{
-  background-color: rgb(43, 43, 43);
+ 
 }
 .cards button:hover img{
-  width: 0px;
+  opacity:0;
+  width: 0;
   height: 0;
 }
 .cards button:hover p{
