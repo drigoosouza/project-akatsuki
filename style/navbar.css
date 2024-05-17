@@ -34,10 +34,12 @@
   width: 120px;
   height:155px;
   transition: all 0.9s;
+  border-radius: 12px;
 }
 
 .cards button img{
   object-fit: cover;
+  border-radius: 14px;
   object-position: 50% 0%;
   width: 120px;
   height: 155px;
@@ -45,12 +47,13 @@
 }
 .cards button p{
   color: transparent;
-  font-size: 1.7rem;
+  font-size: 1.4rem;
   font-family:'roboto';
+  text-transform: uppercase;
 }
 
 .cards button:hover{
- 
+  background-color: #ffffff10;
 }
 .cards button:hover img{
   opacity:0;

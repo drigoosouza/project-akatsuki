@@ -2,7 +2,18 @@
 export function pausePlay (){
   const btnAudio = document.getElementById("btn-audio-play")
   const audio = document.querySelector("audio")
+  let c =-999
   let i = 0
+
+
+  document.addEventListener("mousedown", function (){
+    console.log("oi")
+    if (c!=0){
+      audio.play()
+      c=0
+    }
+    
+  })
 
   btnAudio.addEventListener("click",()=>{
     if(i===0){
