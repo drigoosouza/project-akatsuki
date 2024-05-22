@@ -4,8 +4,8 @@
   inline-size: none;
   top:0;
   width: auto;
-  height: 100vh;
-  padding: 5rem;
+  padding: 2rem;
+  height: 100vh;  
   background-color: rgba(0, 0, 0, 0.733);
   z-index: 5;
   transition: all 0.8s;
@@ -19,15 +19,32 @@
   font-size: 3rem;
   color:var(--primary);
   letter-spacing: .5rem;
+  margin-bottom: 2rem;
 }
 .cards{
   overflow: inherit;
   display: grid;
   grid-template-columns: repeat(3,1fr);
+  grid-template-rows: 155px 155px 155px 155px;
+  height: 90%;
+  padding-bottom: 2rem;
+  padding-right: 15px;
   gap: 15px;
-  padding-top: 3rem;
+  overflow: auto;
+  overflow-x: hidden;
+}
+.cards::-webkit-scrollbar{
+  width: 7px;
+}
+.cards::-webkit-scrollbar-track {
+  background: transparent;        /* color of the tracking area */
+}
+.cards::-webkit-scrollbar-thumb {
+  background-color:var(--primary);    /* color of the scroll thumb */
+  border-radius: 20px;       /* roundness of the scroll thumb */
 }
 .cards button{
+  position: relative;
   border: none;
   background-color: transparent;
   cursor: pointer;
@@ -46,8 +63,12 @@
   transition: height 0.8s, width 1s, opacity 0.4s;
 }
 .cards button p{
+  position: absolute;
+  font-size: 1rem;
   color: transparent;
-  font-size: 1.4rem;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   font-family:'roboto';
   text-transform: uppercase;
 }
@@ -62,4 +83,29 @@
 }
 .cards button:hover p{
   color: var(--primary);
+  font-size: 1.4rem;
+}
+
+@media (max-width: 510px){
+  #navBar{
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.959);
+  }
+  #navBar h2{
+    font-size: 2rem;
+  }
+  .cards{
+    grid-template-columns: repeat(2,100px);
+    grid-template-rows:none;
+    justify-content: center;
+    align-items: center;
+    
+  }
+  .cards button img, .cards button{
+    width: 110px;
+    height: 135px;
+  }
+  .cards button:hover p{
+    font-size: 1rem;
+  }
 }

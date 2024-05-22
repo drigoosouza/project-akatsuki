@@ -13,3 +13,18 @@
   text-shadow: 2px;
   z-index:54545;
 }
+@media (min-width: 450px){
+  #btn-audio-play{
+    top: 41px;
+    right: 100px;
+  }
+
+}
+
+@media (max-width: 450px){
+  #btn-audio-play{
+    top: 30px;
+    right: 100px;
+  }
+
+}

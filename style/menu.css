@@ -59,3 +59,28 @@
   transform: rotate(45deg) translate(-10px, -4px);
   
 }
+@media (min-width: 450px) {
+  #menu header{
+    padding: 1rem 2rem;
+  }
+  #menu #logo{
+    width: 150px;
+  }
+}
+
+@media (max-width: 450px) {
+  #menu header{
+    padding: 1rem 2rem;
+  }
+  #menu #logo{
+    width: 100px;
+  }
+}
+@media (max-width: 350px) {
+  #menu header{
+    padding: 2rem 2rem;
+  }
+  #menu #logo{
+    width: 50px;
+  }
+}

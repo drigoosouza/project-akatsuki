@@ -15,18 +15,62 @@
     
     <div id="background">
       <div id="image">
-        <img class="image" src="./assets/background akatsuki.png"  alt="group akatsuki">
-        <img class="image" src="./assets/member/zetsu.jpg" loading="lazy" alt="member zetsu">
-        <img class="image" src="./assets/member/hidan.jpg" loading="lazy" alt="merber hidan">
-        <img class="image" src="./assets/member/deidara.jpg" loading="lazy"  alt="member deidara">
-        <img class="image" src="./assets/member/kakuzu.jpg" loading="lazy"  alt="member kakuzu">
-        <img class="image" src="./assets/member/kisame.jpg" loading="lazy"  alt="member kisame">
-        <img class="image" src="./assets/member/sasori.jpg" loading="lazy"  alt="member sasori">
-        <img class="image" src="./assets/member/konan.png" loading="lazy"  alt="member konan">
-        <img class="image" src="./assets/member/orochimaru.jpg" loading="lazy"  alt="member orochimaru">
-        <img class="image" src="./assets/member/obito.jpeg" loading="lazy"  alt="member obito">
-        <img class="image" src="./assets/member/itachi.png" loading="lazy"  alt="member itachi">
-        <img class="image" src="./assets/member/nagato.jpg" loading="lazy"  alt="member nagato">
+        <picture>
+          <source media="(min-width: 1024px )" srcset="./assets/background-akatsuki.png">
+          <source media="(min-width: 500px )" srcset="./assets/background-akatsuki.png">
+          <img class="image img-akatsuki" src="./assets/akatsuki-phone1.jpg" alt="group akatsuki" loading="lazy">
+        </picture>
+
+        <picture>
+          <source media="(min-width: 700px )" srcset="./assets/member/zetsu.jpg">
+          <img class="image img-zetsu" src="./assets/member/zetsu-phone.jpg" loading="lazy" alt="member zetsu">
+        </picture>
+
+        <picture>
+          <source media="(min-width: 700px)" srcset="./assets/member/hidan.jpg">
+          <img class="image img-hidan" src="./assets/member/hidan-phone.jpg" loading="lazy" alt="merber hidan">
+        </picture>
+
+        <picture>
+          <source media="(min-width: 700px )" srcset="./assets/member/deidara.jpg">
+          <img class="image img-deidara" src="./assets/member/deidara-phone.jpg" loading="lazy"  alt="member deidara">
+        </picture>
+
+        <picture>
+          <source media="(min-width: 600px)" srcset="./assets/member/kakuzu.jpg">
+          <img class="image img-kakuzu" src="./assets/member/kakuzu-phone.jpg" loading="lazy"  alt="member kakuzu">
+        </picture>
+        <img class="image img-kisame" src="./assets/member/kisame.jpg" loading="lazy"  alt="member kisame">
+        
+        <picture>
+          <source media="(min-width: 630px )" srcset="./assets/member/sasori.jpg">
+          <img class="image img-sasori" src="./assets/member/sasori-phone.jpg" loading="lazy"  alt="member sasori">
+        </picture>
+
+        <picture>
+          <source media="(min-width: 700px )" srcset="./assets/member/konan.png">
+          <img class="image img-konan" src="./assets/member/konan-phone.jpeg" loading="lazy"  alt="member konan">
+        </picture>
+
+        <picture>
+          <source media="(min-width: 600px)" srcset="./assets/member/orochimaru.jpg">
+          <img class="image img-orochimaru" src="./assets/member/orochimaru-phone.jpg" loading="lazy"  alt="member orochimaru">
+        </picture>
+
+        <picture>
+          <source media="(min-width: 700px )" srcset="./assets/member/obito.jpeg">
+          <img class="image img-obito" src="./assets/member/obito-phone.jpg" loading="lazy"  alt="member obito">
+        </picture>
+
+        <picture>
+          <source media="(min-width: 700px)" srcset="./assets/member/itachi.png">
+          <img class="image img-itachi" src="./assets/member/itachi-phone.jpg" loading="lazy"  alt="member itachi">
+        </picture>
+
+        <picture>
+          <source media="(min-width:500px )" srcset="./assets/member/nagato.jpg">
+          <img class="image img-nagato" src="./assets/member/nagato-phone.jpg" loading="lazy"  alt="member nagato">
+        </picture>
       </div>
     </div>
 
@@ -64,8 +108,7 @@
       <main class="section-main">
         <div class="info">
           <h1 id="name" class="akatsuki" data-value="akatsuki">Akatsuki</h1>
-          <p id="text">É um grupo formado por shinobis renegados que trabalham como mercenários em missões secretas para alguns países ninja. Além disso, eles possuíam um objetivo próprio, que é revelado mais adiante, de capturar todos os Jinchuuriki para extrair deles as Bestas de Cauda. Nagato assume a liderança da Akatsuki e seu objetivo fica distorcido pelo ódio do rapaz pelo mundo shinobi que lhe tirou seu país, sua família e seus amigos. E pelas manipulações do Obito. Dessa forma, a Akatsuki passa a recrutar ninjas renegados e o grupo começa a trabalhar como mercenário para adquirir poder e dinheiro. O objetivo do Nagato agora é o de atingir o mundo shinobi com um massacre tão violento e incomparável que geraria medo na população e cessaria as guerras por um período de tempo. Isso funcionaria como um ciclo e esse poder seria usado no futuro novamente, causando o mesmo efeito.</p>        
-        </div>
+          <p id="text">Organização liderada por Pain/nagato</p>
 
         <div class="buttons">
           <button id="prev" onclick="scrolly(-1)" disabled><ion-icon name="arrow-back-circle-outline"></ion-icon></button>
