@@ -18,11 +18,14 @@
 .buttons button ion-icon{
   color: #ee4a43;
   font-size: 50px;
-  transition: all 0.4s;
+  transition: all 0.2s;
   border-radius: 50%;
 }
 .buttons button:hover ion-icon{
  
-  color: #f7f7f7;
+  color: var(--primary);
 
+}
+.buttons button:active ion-icon{
+  color: #f7f7f7;
 }
