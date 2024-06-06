@@ -14,6 +14,7 @@ const members = [{name: "akatsuki", text:"Organização liderada por Pain/nagato
 
 const image = document.getElementById("image")
 let buttonIndex = 0
+image.style.transform=`translatey(${-100*buttonIndex}vh)`
 
 function buttonStatus () {
   const prev = document.getElementById("prev")
