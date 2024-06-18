@@ -1,6 +1,8 @@
 .section-main{
-  padding:0 3rem 4rem;
+  padding:0 3rem 1rem;
   color: var(--secondary);
+  flex-grow: 1;
+  align-content: flex-end;
 }
 
 .info h1{

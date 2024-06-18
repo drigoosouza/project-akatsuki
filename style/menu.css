@@ -59,6 +59,21 @@
   transform: rotate(45deg) translate(-10px, -4px);
   
 }
+
+footer{
+  height: 35px;
+  background-color: #141414;
+  color: #6b6b6b;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'roboto';
+  font-size: 13px;
+}
+footer a{
+  color: var(--primary);
+  margin-left: 5px;
+}
 @media (min-width: 450px) {
   #menu header{
     padding: 1rem 2rem;

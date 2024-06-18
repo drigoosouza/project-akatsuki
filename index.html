@@ -10,12 +10,12 @@
   
     <title>Akatsuki</title>
   </head>
-  <body>
+  <body >
 
     
     <div id="background">
-      <div id="image">
-        <picture>
+      <div id="image" style="transform: translateY(0vh);">
+        <picture id="imgPrimary">
           <source media="(min-width: 1024px )" srcset="./assets/background-akatsuki.png">
           <source media="(min-width: 500px )" srcset="./assets/background-akatsuki.png">
           <img class="image img-akatsuki" src="./assets/akatsuki-phone1.jpg" alt="group akatsuki" loading="lazy">
@@ -115,6 +115,10 @@
           <button id="next" onclick="scrolly(1)"><ion-icon name="arrow-forward-circle-outline"></ion-icon></button>
         </div>
       </main>
+
+      <footer class="section_footer">
+        Developer By <a href="">Rodrigo Souza</a>
+      </footer>
     </div>
     <script src="./script/scrool-button.js"></script>
     <script type="module" src="./script/index.js"></script>
