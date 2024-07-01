@@ -40,7 +40,7 @@ function mainIformation(member,index){
 function scrolly (button){
   buttonIndex += button
   const member = members[buttonIndex]
-  image.style.transform=`translatey(${-100*buttonIndex}vh)`
+  image.style.transform=`translatex(${-100*buttonIndex}vw)`
 
   mainIformation(member,buttonIndex)
   buttonStatus()
@@ -61,7 +61,7 @@ function stylebtnmenber(n){
 function buttonNav(number){
   buttonIndex=number
   const member = members[number]
-  image.style.transform=`translatey(${-100*number}vh)`
+  image.style.transform=`translatex(${-100*number}vw)`
   mainIformation(member,number)
   buttonStatus()
   navbar ()

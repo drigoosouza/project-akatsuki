@@ -14,7 +14,7 @@
 
     
     <div id="background">
-      <div id="image" style="transform: translateY(0vh);">
+      <div id="image">
         <picture id="imgPrimary">
           <source media="(min-width: 1024px )" srcset="./assets/background-akatsuki.png">
           <source media="(min-width: 500px )" srcset="./assets/background-akatsuki.png">
@@ -40,7 +40,11 @@
           <source media="(min-width: 600px)" srcset="./assets/member/kakuzu.jpg">
           <img class="image img-kakuzu" src="./assets/member/kakuzu-phone.jpg" loading="lazy"  alt="member kakuzu">
         </picture>
-        <img class="image img-kisame" src="./assets/member/kisame.jpg" loading="lazy"  alt="member kisame">
+
+        <picture>
+          <source media="(min-width: 600px)" srcset="./assets/member/kisame.jpg">
+          <img class="image img-kisame" src="./assets/member/kisame.jpg" loading="lazy"  alt="member kisame">
+        </picture>
         
         <picture>
           <source media="(min-width: 630px )" srcset="./assets/member/sasori.jpg">
