@@ -1,13 +1,13 @@
 #navBar{
   position: fixed;
-  right: -1200px;
+  right: -2000px;
   inline-size: none;
   top:0;
   width: auto;
   padding: 2rem;
   height: 100vh;  
   background-color: rgba(0, 0, 0, 0.733);
-  z-index: 5;
+  z-index: 2;
   transition: all 0.8s;
   
 }

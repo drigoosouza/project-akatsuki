@@ -23,20 +23,20 @@
   --pain:#f1b74a;
 }
 
+
+
 *{
   box-sizing:border-box;
   padding: 0;
   margin: 0;
 }
 
-body {
-  overflow: hidden;
-  z-index: -9999;
-}
+
 
 #background{
   position: relative;
   z-index: -1 ;
+  overflow: hidden;
 }
 
 #background::before{
@@ -48,9 +48,10 @@ body {
   z-index: 1;
   background: radial-gradient(100% 100% at 50% 1.43%, rgba(22, 21, 21, 0), rgba(22, 21, 21, 0.9) 80%);;
 }
-#background div{
-  position:absolute;
-  width: 100%;
+#image{
+  display: flex;
+  
+  width: 100vw;
   transition: all 0.7s;
 }
 .image{
@@ -59,9 +60,7 @@ body {
   height: 100vh;
   object-fit: cover;
   object-position: 50% 0%;
+  
 }
-#image{
-  display: flex;
-  width: auto;
-}
+
 
